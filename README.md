@@ -162,8 +162,10 @@ skill-forge/
 ```bash
 npm run dev validate examples
 npm run build
-npm test   # alias: validate:all via setup
+npm run doctor
 ```
+
+From a clone, run the CLI with `npm run doctor` or `node bin/skill-forge.js doctor` (avoid `npx skill-forge` from inside the repo on Windows — use global install or `npm run` instead).
 
 ---
 
