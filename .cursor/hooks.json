@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": "node",
+        "args": [".cursor/hooks/skill-forge-daily.mjs"],
+        "env": {
+          "SKILL_FORGE_ROOT": "."
+        }
+      }
+    ]
+  }
+}
