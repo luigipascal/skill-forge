@@ -29,17 +29,8 @@ Agent Skills are folders with a `SKILL.md` file — instructions agents load whe
 ```bash
 git clone https://github.com/luigipascal/skill-forge.git
 cd skill-forge
-npm install
-npm run setup
-```
-
-`setup` builds the CLI, validates bundled examples, and optionally installs curated skills into your personal Cursor folder.
-
-### One-liner (after cloning)
-
-```bash
-npx skill-forge doctor
-npx skill-forge install-curated
+npm install          # builds CLI automatically
+npm run install:curated   # optional: install starter skills for Cursor
 ```
 
 ---

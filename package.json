@@ -15,6 +15,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "prepare": "npm run build",
     "dev": "tsx src/cli.ts",
     "validate": "tsx src/cli.ts validate .",
     "validate:all": "tsx src/cli.ts validate examples .cursor/skills",
