@@ -1,0 +1,55 @@
+{
+  "name": "skill-forge",
+  "version": "0.1.0",
+  "description": "Validate, scaffold, and install Agent Skills for Cursor and agentskills.io-compatible agents",
+  "type": "module",
+  "bin": {
+    "skill-forge": "./bin/skill-forge.js"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "examples",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "validate": "tsx src/cli.ts validate .",
+    "validate:all": "tsx src/cli.ts validate examples .cursor/skills",
+    "init": "tsx src/cli.ts init",
+    "doctor": "tsx src/cli.ts doctor",
+    "install:curated": "tsx src/cli.ts install-curated",
+    "setup": "npm run build && npm run validate:all && npm run install:curated"
+  },
+  "keywords": [
+    "agent-skills",
+    "cursor",
+    "cursor-ide",
+    "skills",
+    "agentskills",
+    "ai-agents",
+    "mcp",
+    "cli",
+    "claude",
+    "developer-tools"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luigipascal/skill-forge.git"
+  },
+  "homepage": "https://github.com/luigipascal/skill-forge#readme",
+  "bugs": {
+    "url": "https://github.com/luigipascal/skill-forge/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0"
+  }
+}
